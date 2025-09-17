@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css\shoes.css">
+    <link rel="stylesheet" href="css\account.css">
+    <title>Shoes-Kart</title>
+    <style>
+        .small-carousel
+        {
+            max-width: 100%;
+            max-height: 350px;
+            margin: 0 auto;
+        }
+
+        .small-carousel .carousel-item img
+        {
+            max-height: 350px;
+            object-fit: cover;
+        }
+
+        .sticky-arrow
+        {
+            display: inline;
+            background-color: transparent;
+            text-align: center;
+            float: right;
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .sticky-arrow i
+        {
+            color: black;
+        }
+        
+        .feature-products .card
+        {
+            border: 1px solid #ccc;
+            margin: 10px;
+            transition: all 0.3s ease;  
+            text-align: center;
+        }
+
+        .feature-products .card:hover
+        {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+    </header>
+    <nav id="navbar">
+    </nav> 
+    <div id="account-sidebar">
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide small-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images1\1.jpeg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="images1\2.jpeg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="images1\3.jpeg" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-5 feature-products">
+        <h2 class="text-center my-5">Featured Products</h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/4.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordans</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f1()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/5.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sneakers</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f2()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/6.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sport Shoes</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f3()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/7.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleek Formals</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f4()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 feature-products">
+        <h2 class="text-center my-5">All for Her</h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/8.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Heels</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f5()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/9.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Casually Classy</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f6()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/10.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sport Shoes</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f7()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="images1/11.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Comfy Flip Flops</h5>
+                        <p class="card-text">Comfortable and stylish shoes for everyday wear.</p>
+                        <a onclick="f8()" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="my-5">Try our new features</h2>
+        <div class="row">
+            <div class="col">
+                <div class="btn btn-light" onclick="window.location.href = 'findSize.html'">Find my Shoe Size</div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="text-center my-5">Customer Reviews</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card m-2 m-md-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Great Shoes for Running!</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                            <p class="text-muted ms-2">John Doe</p>
+                        </div>
+                        <p class="card-text">I have been using these shoes for my morning runs, and I have to say, they are perfect! They offer great support, and I don't feel any discomfort even after running for hours. The material feels breathable and the grip is outstanding. Highly recommend them for anyone looking for quality running shoes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card m-2 m-md-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish and Comfortable</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+                            <p class="text-muted ms-2">Jane Smith</p>
+                        </div>
+                        <p class="card-text">These shoes fit like a dream! The design is trendy, and they go with almost any outfit. I wear them to work and on the weekends, and they have never disappointed me in terms of comfort. The cushioned sole is soft, and I love how they look paired with jeans or even a dress. Worth every penny!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card m-1 m-md-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Purchase Ever!</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                            <p class="text-muted ms-2">Samuel Lee</p>
+                        </div>
+                        <p class="card-text">I bought these shoes for a hiking trip, and they did not disappoint. The traction is great, even on slippery surfaces, and they offer fantastic support for long-distance walking. They’re also durable, and after several hikes, they still look brand new. Definitely worth the investment!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="text-center my-4">Discover</h2>
+        <div class="feature-products">
+            <div class="row">
+                <div id="m" class="col-sm-4">
+                    <a class="text-decoration-none text-dark" href="mens.html">
+                        <div class="card">
+                            <img src="images1/12.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Men's Shoes</h5>
+                                <p class="card-text">Explore collection of stylish men's shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="w" class="col-sm-4">
+                    <a class="text-decoration-none text-dark" href="womens.html">
+                        <div class="card">
+                            <img src="images1/13.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Women's Shoes</h5>
+                                <p class="card-text">Discover the latest in women's footwear.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="k" class="col-sm-4">
+                    <a class="text-decoration-none text-dark" href="kids.html">
+                        <div class="card">
+                            <img src="images1/14.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Kids' Shoes</h5>
+                                <p class="card-text">Find the perfect shoes for your little ones.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="sticky-bottom sticky-arrow" href="#"><i class="bi bi-arrow-up-circle"></i></a>
+    <footer id="footer">
+    </footer>
+    <script src="js\shoes.js"></script>
+    <script src="js\account.js"></script>
+    <script src="js\product.js"></script>
+    <script>
+        window.onload = function()
+        {
+            showHeader();
+            showNavbar();
+            showFooter();
+        }
+
+        function f1()
+        {
+            window.location.href = "mens.html?filter=nike";
+        }
+
+        function f2()
+        {
+            window.location.href = "mens.html?filter=sneaker";
+        }
+
+        function f3()
+        {
+            window.location.href = "mens.html?filter=sport";
+        }
+
+        function f4()
+        {
+            window.location.href = "mens.html?filter=formal";
+        }
+
+        function f5()
+        {
+            window.location.href = "womens.html?filter=heel";
+        }
+
+        function f6()
+        {
+            window.location.href = "womens.html?filter=casual";
+        }
+
+        function f7()
+        {
+            window.location.href = "womens.html?filter=sport";
+        }
+
+        function f8()
+        {
+            window.location.href = "womens.html?filter=flip flop";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.header
+{
+    background-color: black;
+    color: white;
+    padding: 16px 0px;
+    text-align: center;
+}
+
+.header h1
+{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header p
+{
+    font-size: 24px;
+}
+
+.footer
+{
+    background-color: #333;
+    color: white;
+    padding: 16px 0px;
+}
+
+#subscribe-button
+{
+    z-index: 1;
+}
+
+.footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover
+{
+    color: lightgray;
+}
+
+.footer .social-icons i
+{
+    font-size: 24px;
+    margin: 0 8px;
+    color: white;
+}
+
+.footer .social-icons i:hover
+{
+    color: lightgray;
+}
+
+.footer h5
+{
+    margin-bottom: 16px;
+}
+
+.footer .input-group
+{
+    max-width: 400px;
+}
+
+.footer .contact-info li
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.footer .contact-info li i
+{
+    margin-right: 8px;
+}
+
+.navbar
+{
+    z-index: 1;
+}

@@ -1,0 +1,72 @@
+.filterSidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.filterItem
+{
+    border: solid;
+    border-color: gray;
+    border-width: 0px 0px 3px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-check-input:focus
+{
+    background-color: white;
+    box-shadow: none;
+}
+
+.form-check-input:checked
+{
+    background-color: black;
+    border-color: black;
+    box-shadow: none;
+}
+
+.form-check-label
+{
+    font-family: inherit;
+    color: black;
+    font-size: 18px;
+}
+
+.dropdown-toggle::after
+{
+    display: none;
+}
+
+.dropdown-item:hover
+{
+    background-color: whitesmoke;
+}
+
+.dropdown-item:active
+{
+    color: black;
+    background-color: white;
+}
+
+@media (max-width: 768px)
+{
+    .filterSidebar
+    {
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px) 
+{
+    .filterSidebar
+    {
+        width: 250px;
+    }
+}
