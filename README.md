@@ -61,6 +61,8 @@ E-Commerce-Shoes-Kart/<br>
 
     Open index.html in any browser to view the homepage.
 
+---
+   
 ## Project Screenshots
 
 - **Home Page**
