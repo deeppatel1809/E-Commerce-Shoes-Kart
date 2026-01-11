@@ -113,11 +113,3 @@ E-Commerce-Shoes-Kart/<br>
 - **Account Sidebar**
 
     <img src="https://github.com/user-attachments/assets/1c866ac2-75e6-4fed-9042-a3ab1172c9cd" width="30%" />
-
-
-
-
-
-    
-
-    
